@@ -157,14 +157,14 @@ pie title Budget Allocation Breakdown ($288,810.14 AUD)
 
 ## 👥 Team Members & Contributions
 
-| Student Name | Student ID | Mid-Semester Contributions | End-Semester Contributions |
-| :--- | :--- | :--- | :--- |
-| **Anushree Girish** | **25415098** | Design Solution Options | Executive Summary + Prototyping |
-| **YuetTing Wong** | 25498852 | Project Scope | Detailed Design |
-| **Riley Backhouse** | 25358829 | Introduction | Implementation Plan |
-| **Michelle Pham** | 24521318 | Proposed Design Solution | Cost Analysis |
-| **Sungjin Cho** | 25582065 | Conclusion | Discussion |
-| **Mahaba Kamal** | 25579196 | Background | Prototyping |
+| Student Name | Mid-Semester Contributions | End-Semester Contributions |
+| :--- | :--- | :--- |
+| **Anushree Girish** | Design Solution Options | Executive Summary + Prototyping |
+| **YuetTing Wong** | Project Scope | Detailed Design |
+| **Riley Backhouse** | Introduction | Implementation Plan |
+| **Michelle Pham** | Proposed Design Solution | Cost Analysis |
+| **Sungjin Cho** | Conclusion | Discussion |
+| **Mahaba Kamal** | Background | Prototyping |
 
 ---
 

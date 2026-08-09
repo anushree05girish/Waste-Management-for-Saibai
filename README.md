@@ -16,26 +16,20 @@ Saibai Island faces severe waste management challenges due to its remote geograp
 
 ```mermaid
 graph TD
-    %% Custom Styling
-    classDef primary fill:#0077b6,stroke:#03045e,stroke-width:2px,color:#fff;
-    classDef highlight fill:#00b4d8,stroke:#0077b6,stroke-width:2px,color:#fff;
-    classDef accent fill:#90e0ef,stroke:#0077b6,stroke-width:1px,color:#03045e;
-    classDef success fill:#52b788,stroke:#2d6a4f,stroke-width:2px,color:#fff;
-
-    SubGraph1["<b>🌏 Saibai Island Environment</b>"]
-    A["<b>Geographic Isolation & Coastal Vulnerability</b>"] ::: primary
-    B["<b>Limited Infrastructure & Biosecurity Constraints</b>"] ::: primary
+    subgraph S1 [Saibai Island Environment]
+        A[Geographic Isolation and Coastal Vulnerability]
+        B[Limited Infrastructure and Biosecurity Constraints]
     end
 
-    SubGraph2["<b>📱 Dugong Dispose Digital Solution</b>"]
-    C["<b>Multi-Lingual Educational Platform</b><br/>(Kalaw Kawaw Ya | Yumplatok | English)"] ::: highlight
-    D["<b>Interactive App Modules</b><br/>(Monitoring, Rewards, Waste Map, Forum)"] ::: highlight
+    subgraph S2 [Dugong Dispose Digital Solution]
+        C[Multi-Lingual Educational Platform]
+        D[Interactive App Modules]
     end
 
-    SubGraph3["<b>🌱 Desired Impact & Outcomes</b>"]
-    E["<b>Increased Waste Segregation & Recycling</b>"] ::: success
-    F["<b>Protection of Marine Life & Dugong Habitats</b>"] ::: success
-    G["<b>Empowered Community & Eco-Habits</b>"] ::: success
+    subgraph S3 [Desired Impact and Outcomes]
+        E[Increased Waste Segregation and Recycling]
+        F[Protection of Marine Life and Dugong Habitats]
+        G[Empowered Community and Eco-Habits]
     end
 
     A --> C
@@ -58,57 +52,23 @@ graph TD
 
 ```mermaid
 flowchart TB
-    %% Nodes definition
-    user[("👤 Community Residents & Youth")]
-    app["📱 Dugong Dispose Mobile App<br/>(iOS / Android / Offline Cache)"]
-    backend["☁️ Cloud & Analytics Backend<br/>(Telstra 4G Cellular Network)"]
-    council["🏛️ TSIRC & Local Council Dashboard"]
-    logistics["🚢 Waste Logistics & Porter Service<br/>(Sea Swift / CEQ Recycling)"]
+    user[Community Residents and Youth]
+    app[Dugong Dispose Mobile App]
+    backend[Cloud and Analytics Backend]
+    council[TSIRC and Local Council Dashboard]
+    logistics[Waste Logistics and Porter Service]
 
-    %% Flow interactions
-    user -->|"1. Segregates waste & scans QR / drops off"| app
-    user -->|"2. Reports waste hotspots via photo map"| app
-    app -->|"3. Earns reward points & views tutorials"| user
-    app <-->|"4. Syncs data & alerts over Telstra 4G"| backend
-    backend -->|"5. Hotspot & bin fill-level analytics"| council
-    council -->|"6. Optimized waste collection schedules"| logistics
-
-    %% Styling
-    style user fill:#023e8a,stroke:#03045e,color:#fff
-    style app fill:#0077b6,stroke:#03045e,color:#fff
-    style backend fill:#0096c7,stroke:#03045e,color:#fff
-    style council fill:#00b4d8,stroke:#03045e,color:#fff
-    style logistics fill:#48cae4,stroke:#03045e,color:#111
+    user -->|1. Segregates waste and scans QR / drops off| app
+    user -->|2. Reports waste hotspots via photo map| app
+    app -->|3. Earns reward points and views tutorials| user
+    app <-->|4. Syncs data and alerts over Telstra 4G| backend
+    backend -->|5. Hotspot and bin fill-level analytics| council
+    council -->|6. Optimized waste collection schedules| logistics
 ```
 
 ---
 
 ## ✨ Key Features & Application Modules
-
-```mermaid
-mindmap
-  root((Dugong Dispose Platform))
-    📊 Waste Monitoring System
-      Household trend tracking
-      Public area bin status
-      Optimized collection schedules
-    🎁 Rewards Incentive System
-      Points for waste segregation
-      Discount on waste disposal fees
-      Community recognition & rewards
-    💬 In-App Community Forum
-      Eco-friendly tips & updates
-      Community clean-up events
-      Resident discussion board
-    🔔 Smart Notification Alerts
-      Bin collection timing alerts
-      Clean-up drive reminders
-      Multi-lingual educational highlights
-    🎮 Gamified Map & Mini-Games
-      Interactive hotspot waste map
-      Youth-focused sorting games
-      Culturally tailored marine protection lessons
-```
 
 1. **📊 Waste Monitoring System**
    - Tracks waste generation trends across households and public areas.
@@ -133,41 +93,27 @@ mindmap
 ## ⚖️ Design Decision Matrix Analysis
 
 ```mermaid
-gantt
-    title Design Option Evaluation Scores (Out of 5)
-    dateFormat  X
-    axisFormat %s
-
-    section Design Option 1: Smart Bins & Sensors
-    Implementation Cost (Low=5)     : active, 1, 0, 1
-    Maintenance Demand (Low=5)      : active, 2, 0, 2
-    Daily Functionality              : active, 4, 0, 4
-    Accessibility                    : active, 3, 0, 3
-    Simplicity                       : active, 2, 0, 2
-    Environmental Impact             : active, 4, 0, 4
-    Community Engagement             : active, 3, 0, 3
-    Cultural Relevance               : active, 3, 0, 3
-
-    section Design Option 2: Digital Storytelling & Podcasts
-    Implementation Cost (Low=5)     : crit, 4, 0, 4
-    Maintenance Demand (Low=5)      : crit, 4, 0, 4
-    Daily Functionality              : crit, 3, 0, 3
-    Accessibility                    : crit, 3, 0, 3
-    Simplicity                       : crit, 4, 0, 4
-    Environmental Impact             : crit, 3, 0, 3
-    Community Engagement             : crit, 4, 0, 4
-    Cultural Relevance (Ethics Risk) : crit, 1, 0, 1
-
-    section Design Option 3: Dugong Dispose Mobile App (Selected)
-    Implementation Cost (Low=5)     : done, 3, 0, 3
-    Maintenance Demand (Low=5)      : done, 4, 0, 4
-    Daily Functionality              : done, 5, 0, 5
-    Accessibility                    : done, 5, 0, 5
-    Simplicity                       : done, 4, 0, 4
-    Environmental Impact             : done, 4, 0, 4
-    Community Engagement             : done, 5, 0, 5
-    Cultural Relevance               : done, 5, 0, 5
+pie title Design Decision Score Summary (Max 40 Points)
+    "Option 1: Smart Bins and Sensors (22/40)" : 22
+    "Option 2: Digital Storytelling & Podcasts (23/40)" : 23
+    "Option 3: Dugong Dispose Mobile App - Selected (35/40)" : 35
 ```
+
+### 📋 Detailed Criteria Evaluation Table
+
+| Evaluation Criteria | Option 1: Smart Bins | Option 2: Storytelling | Option 3: Dugong Dispose App (Selected) |
+| :--- | :---: | :---: | :---: |
+| **1. Implementation Cost (Low=5)** | 1 / 5 | 4 / 5 | **3 / 5** |
+| **2. Maintenance Demand (Low=5)** | 2 / 5 | 4 / 5 | **4 / 5** |
+| **3. Daily Functionality** | 4 / 5 | 3 / 5 | **5 / 5** |
+| **4. Accessibility Support** | 3 / 5 | 3 / 5 | **5 / 5** |
+| **5. Simplicity** | 2 / 5 | 4 / 5 | **4 / 5** |
+| **6. Environmental Impact** | 4 / 5 | 3 / 5 | **4 / 5** |
+| **7. Community Engagement** | 3 / 5 | 4 / 5 | **5 / 5** |
+| **8. Cultural Relevance** | 3 / 5 | 1 / 5 *(Ethics Risk)* | **5 / 5** |
+| **Total Score** | **22 / 40** | **23 / 40** | **35 / 40** |
+
+---
 
 ### 🗑️ Physical Color-Coded Waste Bin Infrastructure Integration
 
@@ -222,27 +168,7 @@ pie title Budget Allocation Breakdown ($288,810.14 AUD)
 
 ---
 
-## 🛠️ Implementation & Rollout Timeline
-
-```mermaid
-gantt
-    title Dugong Dispose 6-Month Project Implementation Schedule
-    dateFormat  YYYY-MM-DD
-    section Phase 1: Planning
-    Stakeholder Engagement & EWB Review   :2024-01-01, 30d
-    Cultural Translation & Content Prep   :2024-01-15, 30d
-    section Phase 2: App Development
-    UI/UX Design & Wireframing           :2024-02-01, 30d
-    Frontend & Backend Development        :2024-03-01, 60d
-    Testing & QA Validation              :2024-04-15, 30d
-    section Phase 3: Infrastructure
-    Bin & Poster Procurement              :2024-04-01, 30d
-    Sea Swift Transport to Saibai        :2024-05-01, 20d
-    Hotspot Installation                 :2024-05-20, 15d
-    section Phase 4: Launch & Operations
-    Community Workshops & App Rollout     :2024-06-01, 30d
-    Post-Launch Maintenance & Support    :2024-07-01, 60d
-```
+## 🛠️ Implementation & Infrastructure Strategy
 
 - **Material Sourcing & Marketing:** Posters integrated with QR codes distributed across 15 high-traffic locations on Saibai Island for seamless app access and sign-ups. Color-coded bin systems introduced alongside educational media.
 - **Stakeholder Collaboration:** Developed in direct alignment with EWB, Torres Strait Island Regional Council (TSIRC), local elders, and residents.
@@ -254,7 +180,7 @@ gantt
 
 ```text
 .
-├── README.md                                       # Comprehensive Project Documentation with Mermaid Diagrams & Data Visuals
+├── README.md                                       # Comprehensive Project Documentation with Clean Mermaid Diagrams & Visuals
 └── Assessment Task 2b_ EWB Challenge Team Report.pdf  # Full Project Engineering Report (PDF)
 ```
 
